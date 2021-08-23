@@ -255,3 +255,66 @@ a{
     grid-row: 7 / 10;
 }
 /* End Portfolio */
+
+/* iPhone 5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    .main-container{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .titles{
+        grid-column: 1 / 7;
+        grid-row: 2 / 3;
+    }
+
+    .adjust-padding-iphone5{
+        padding: 0 1rem;
+    }
+
+    /* Home */
+    .home-article img{
+        width: 50%;
+    }
+    /* End Home */
+
+    /* About */
+    .section-container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template: repeat(12, 1fr) / repeat(6, 1fr);
+    }
+
+    .about-article-description{
+        grid-column: 1 / 7;
+        grid-row: 3 / 9;
+        display: grid;
+        grid-template-rows: 50px 1fr;
+    }
+
+    .about-aside-extra-info{
+        grid-column: 1 / 7;
+        grid-row: 9 / 11;
+    }
+
+    .about-social-contact{
+        font-size: inherit;
+    }
+
+    .about-article-card{
+        grid-column: 1 / 7;
+        grid-row: 11 / 13;
+    }
+
+    .about-article-card figure{
+        display: none;
+    }
+    /* End About*/
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    body{
+        border: solid red 2px;
+    }
+}
