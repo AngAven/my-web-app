@@ -257,7 +257,7 @@ a{
 /* End Portfolio */
 
 /* iPhone 5 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+@media only screen and (min-device-width: 320px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
     .main-container{
         display: grid;
         grid-template-rows: repeat(4, 1fr);
