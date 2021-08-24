@@ -288,14 +288,14 @@ a{
         width: 100vw;
         height: 100vh;
         display: grid;
-        grid-template: repeat(12, minmax(50px, 1fr)) / repeat(6, 1fr);
+        grid-template: repeat(12, minmax(60px, 1fr)) / repeat(6, 1fr)
     }
 
     .about-article-description{
         grid-column: 1 / 7;
         grid-row: 3 / 8;
         display: grid;
-        grid-template-rows: minmax(50px, 90px) 1fr;
+        grid-template-rows: repeat(2, minmax(50px, 80px))
     }
 
     .about-aside-extra-info{
@@ -305,11 +305,16 @@ a{
 
     .about-social-contact{
         font-size: inherit;
+        padding: 1rem;
     }
 
     .about-article-card{
         grid-column: 1 / 7;
         grid-row: 10 / 11;
+    }
+
+    .aside-extra-info-list{
+        padding: 2rem;
     }
     /* End About*/
 }
