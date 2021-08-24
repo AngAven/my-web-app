@@ -153,6 +153,7 @@ a{
     border: solid #A0CE4E;
     width: 200px;
     height: 40px;
+    font-size: 2rem;
 }
 /* End About */
 
@@ -257,12 +258,6 @@ a{
 /* End Portfolio */
 
 /* iPhone 5 */
-/*@media only screen and (width : 320px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {*/
-/*    body{*/
-/*        font-size: 1.2rem;*/
-/*    }*/
-/*}*/
-
 @media screen and (min-width: 320px) and (max-width: 414px) and (orientation : portrait){
     .main-container{
         display: grid;
@@ -293,7 +288,7 @@ a{
         width: 100vw;
         height: 100vh;
         display: grid;
-        grid-template: repeat(12, 1fr) / repeat(6, 1fr);
+        grid-template: repeat(12, minmax(50px, 1fr)) / repeat(6, 1fr);
     }
 
     .about-article-description{
@@ -315,10 +310,6 @@ a{
     .about-article-card{
         grid-column: 1 / 7;
         grid-row: 10 / 11;
-    }
-
-    .card-download-cv button{
-        font-size: 2rem;
     }
     /* End About*/
 }
