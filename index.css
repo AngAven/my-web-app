@@ -317,7 +317,7 @@ a{
         grid-row: 10 / 11;
     }
 
-    .card-download-cv div{
+    .card-download-cv button{
         font-size: 2rem;
     }
     /* End About*/
