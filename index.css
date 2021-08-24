@@ -300,7 +300,7 @@ a{
         grid-column: 1 / 7;
         grid-row: 3 / 8;
         display: grid;
-        grid-template-rows: minmax(50px, 80px) 1fr;
+        grid-template-rows: minmax(50px, 90px) 1fr;
     }
 
     .about-aside-extra-info{
@@ -315,6 +315,10 @@ a{
     .about-article-card{
         grid-column: 1 / 7;
         grid-row: 10 / 11;
+    }
+
+    .card-download-cv div{
+        font-size: 2rem;
     }
     /* End About*/
 }
