@@ -317,9 +317,23 @@ a{
         padding: 2rem;
     }
     /* End About*/
+
+    /* Skills */
+    .skills-section-items{
+        padding-top: 2rem;
+        grid-column: 1 / 7;
+        grid-row: 4 / 11;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 100px));
+        font-size: 1.2rem;
+    }
+    /* End Skills */
 }
 
+/* Tablet */
 @media screen and (min-width: 601px) and (max-width: 767px) and (orientation : portrait) {
+    .titles{
+        grid-column: 2 / 10;
+    }
     /* About */
     .card-image{
         width: 20rem;
@@ -339,4 +353,14 @@ a{
         grid-row: 10 / 10;
     }
     /*End About */
+
+    /* Skills */
+    .skills-section-items{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-column: 2 / 10;
+        grid-row: 3 / 11;
+        grid-gap: 1.5rem;
+        font-size: 1.4rem;
+    }
+    /* End Skills */
 }
