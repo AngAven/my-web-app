@@ -270,7 +270,7 @@ a{
         grid-row: 2 / 3;
     }
 
-    .adjust-padding-iphone5{
+    .adjust-padding-mobile{
         padding: 0 1rem;
     }
 
@@ -331,6 +331,10 @@ a{
 
 /* Tablet */
 @media screen and (min-width: 601px) and (max-width: 767px) and (orientation : portrait) {
+    .padding-1rem{
+        padding: 1rem;
+    }
+
     .titles{
         grid-column: 2 / 10;
     }
