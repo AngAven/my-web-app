@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
   <title>Angel Avendaño Cruz</title>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <link rel="stylesheet" href="./index.css">
+  <!--  Animate CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
   <!-- Google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 <div class="main-container">
   <nav class="nav">
     <ul class="nav-list">
-      <li><a href="#home">Home</a></li>
+      <li class=""><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
@@ -26,7 +28,8 @@
   <section class="home" id="home">
     <article class="home-article">
       <figure>
-        <img class="avatar" src="https://avatars.githubusercontent.com/u/6280066?v=4" alt="">
+        <img class="avatar"
+             src="https://avatars.githubusercontent.com/u/6280066?v=4" alt="">
       </figure>
       <div class="titles light">
         <h1 class="title">Hi, I'm Ángel Avendaño Cruz</h1>
@@ -151,43 +154,37 @@
       <!--      <h2 class="sub-title">Technologies / Years of experience</h2>-->
     </div>
     <article class="portfolio-article">
-      <div class="portfolio-article-item item-1">
-        <a href="https://ventanilla.huixquilucan.gob.mx/" target="_blank">
-          <div class="description">
-            <h4>Ventanilla Huixquilucan</h4>
-            <h5>Government</h5>
-          </div>
-        </a>
+      <div class="portfolio-article-item pointer item-1" id="uno">
+        <div class="description">
+          <h4>Ventanilla Huixquilucan</h4>
+          <h5>Government</h5>
+        </div>
       </div>
-      <div class="portfolio-article-item item-2">
-        <a href="https://tribunalvirtual.tsjqroo.gob.mx/" target="_blank">
-          <div class="description">
-            <h4>Poder Judicial</h4>
-            <h5>Government</h5>
-          </div>
-        </a>
+      <div class="portfolio-article-item pointer item-2">
+        <div class="description">
+          <h4>Poder Judicial</h4>
+          <h5>Government</h5>
+        </div>
       </div>
-      <div class="portfolio-article-item item-3">
-        <a href="https://ventanillaunica.naucalpan.gob.mx/" target="_blank">
-          <div class="description">
-            <h4>Ventanilla Naucalpan</h4>
-            <h5>Government</h5>
-          </div>
-        </a>
+      <div class="portfolio-article-item pointer item-3">
+        <div class="description">
+          <h4>Ventanilla Naucalpan</h4>
+          <h5>Government</h5>
+        </div>
       </div>
-      <div class="portfolio-article-item item-4">
+      <div class="portfolio-article-item pointer item-4">
         <div class="description">
           <h4>Co2scan</h4>
           <h5>Hackaton</h5>
         </div>
       </div>
-      <div class="portfolio-article-item item-5">
+      <div class="portfolio-article-item pointer item-5">
         <div class="description">
           <h4>Trámites y servicios</h4>
           <h5>Government</h5>
         </div>
       </div>
-      <div class="portfolio-article-item item-6">
+      <div class="portfolio-article-item pointer item-6">
         <div class="description">
           <h4>Data Visualization</h4>
           <h5>Politics / Government</h5>
@@ -196,6 +193,21 @@
     </article>
   </section>
 </div>
+
+<!--<div class="container">-->
+<!--  <div class="interior">-->
+<!--    <a class="btn" href="#open-modal">👋 Basic CSS-Only Modal</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<div id="open-modal" class="modal-window">-->
+<!--  <div>-->
+<!--    <a href="#" title="Close" class="modal-close">Close</a>-->
+<!--    <h1>Voilà!</h1>-->
+<!--    <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>-->
+<!--    <div><small>Check out</small></div>-->
+<!--    <a href="https://aminoeditor.com" target="_blank">👉 Amino: Live CSS Editor for Chrome</div>-->
+<!--</div>-->
+
 <script src="./index.js"></script>
 </body>
 </html>
