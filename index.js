@@ -3,6 +3,7 @@
 // Create a condition that targets viewports at least 600px wide
 const mobile = window.matchMedia('(max-width: 600px)')
 const modal = document.querySelector('.btn')
+const closeModalButton = document.querySelector('.modal-close')
 const API = 'https://my.api.mockaroo.com/portfolio_data.json?key=d48cf750'
 
 function handleTabletChange(e) {
@@ -49,8 +50,9 @@ function addModalContent(cardData) {
   figureFIGURE.classList.add('modal-image')
   titleH2.classList.add('modal-title')
   subTitleH3.classList.add('modal-subtitle')
-  descriptionDIV.classList.add('description')
-  technologiesDIV.classList.add('technologies')
+  descriptionDIV.classList.add('modal-description')
+  technologiesDIV.classList.add('modal-technologies')
+  linkA.classList.add('modal-link')
   linkA.target = '_blank'
   linkA.appendChild(linkSMALL)
 
@@ -84,6 +86,17 @@ async function handlePortFolioCard(e){
 
   modal.click()
 }
+
+function removeModalContent(e){
+  document.querySelector('.modal-image').remove()
+  document.querySelector('.modal-title').remove()
+  document.querySelector('.modal-subtitle').remove()
+  document.querySelector('.modal-description').remove()
+  document.querySelector('.modal-technologies').remove()
+  document.querySelector('.modal-link').remove()
+}
+
+closeModalButton.addEventListener('click', removeModalContent)
 // End Modal
 
 portfolioCards.forEach(item => {
