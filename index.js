@@ -42,8 +42,8 @@ function addModalContent(cardData) {
   titleH2.textContent = title
   subTitleH3.textContent = sub_title
   descriptionDIV.textContent = description
-  technologiesDIV.textContent = technologies
-  linkSMALL.textContent = 'Link'
+  technologiesDIV.textContent = 'Technologies: ' + technologies
+  linkSMALL.textContent = 'Project Link'
   linkA.href = link
 
   figureFIGURE.appendChild(imageIMG)
@@ -68,10 +68,6 @@ async function getModalContent() {
   return data = await fetch(API)
     .then(response => response.json())
     .then(data => data);
-}
-
-function openModal() {
-  modal.click()
 }
 
 async function handlePortFolioCard(e){
