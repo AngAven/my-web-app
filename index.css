@@ -2,6 +2,7 @@
     --shadow: 5px 5px 5px -2px rgba(0,0,0,0.54);
     --blue: #0087ff;
     --green: #088a72;
+    --grey-bold: rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -62,6 +63,9 @@ a{
     cursor: pointer;
 }
 
+.bold{
+    font-weight: bold;
+}
 /* nav */
 .nav{
     position: fixed;
@@ -355,7 +359,8 @@ small {
 }
 
 .insert-modal-content{
-    /*border: solid red 2px;*/
+    display: grid;
+    grid-gap: 2rem;
 }
 
 .modal-image{
@@ -391,6 +396,7 @@ small {
     width: 80px;
     height: 80px;
 }
+
 .lds-grid div {
     position: absolute;
     width: 16px;
@@ -399,51 +405,61 @@ small {
     background: rgba(0, 0, 0, 0.49);
     animation: lds-grid 1.2s linear infinite;
 }
+
 .lds-grid div:nth-child(1) {
     top: 8px;
     left: 8px;
     animation-delay: 0s;
 }
+
 .lds-grid div:nth-child(2) {
     top: 8px;
     left: 32px;
     animation-delay: -0.4s;
 }
+
 .lds-grid div:nth-child(3) {
     top: 8px;
     left: 56px;
     animation-delay: -0.8s;
 }
+
 .lds-grid div:nth-child(4) {
     top: 32px;
     left: 8px;
     animation-delay: -0.4s;
 }
+
 .lds-grid div:nth-child(5) {
     top: 32px;
     left: 32px;
     animation-delay: -0.8s;
 }
+
 .lds-grid div:nth-child(6) {
     top: 32px;
     left: 56px;
     animation-delay: -1.2s;
 }
+
 .lds-grid div:nth-child(7) {
     top: 56px;
     left: 8px;
     animation-delay: -0.8s;
 }
+
 .lds-grid div:nth-child(8) {
     top: 56px;
     left: 32px;
     animation-delay: -1.2s;
 }
+
 .lds-grid div:nth-child(9) {
     top: 56px;
     left: 56px;
     animation-delay: -1.6s;
 }
+
 @keyframes lds-grid {
     0%, 100% {
         opacity: 1;
@@ -556,6 +572,29 @@ small {
         grid-row: 6 / 7;
     }
     /* End Portfolio */
+
+    /* Modal */
+    .modal-window > div{
+        width: 95%;
+    }
+
+    .insert-modal-content{
+        font-size: 1.2rem;
+        overflow-y: scroll;
+    }
+
+    .modal-image img{
+        width: 100%;
+    }
+
+    .modal-title{
+        font-size: 1.6rem;
+    }
+
+    .modal-subtitle{
+        font-size: 1.4rem;
+    }
+    /* End Modal */
 }
 
 /* Tablet */

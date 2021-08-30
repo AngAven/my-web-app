@@ -52,6 +52,7 @@ function addModalContent(cardData) {
     subTitleH3.classList.add('modal-subtitle')
     descriptionDIV.classList.add('modal-description')
     technologiesDIV.classList.add('modal-technologies')
+    technologiesDIV.classList.add('bold')
     linkA.classList.add('modal-link')
     linkA.target = '_blank'
     linkA.appendChild(linkSMALL)
