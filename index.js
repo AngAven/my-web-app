@@ -1,9 +1,8 @@
-// 'use Strict'
-
 // Create a condition that targets viewports at least 600px wide
 const mobile = window.matchMedia('(max-width: 600px)')
 const modal = document.querySelector('.btn')
 const closeModalButton = document.querySelector('.modal-close')
+const loader = document.querySelector('.loader')
 const API = 'https://app.general.angelavendanocruz.com/general_api'
 // const API = 'https://my.api.mockaroo.com/portfolio_data.json?key=d48cf750'
 
@@ -17,12 +16,10 @@ mobile.addEventListener( 'change', handleTabletChange)
 
 handleTabletChange(mobile)
 
-//
 const portfolioCards = Array.from(document.querySelectorAll('.portfolio-article-item'))
 
 // Modal
 function addModalContent(cardData) {
-
   if (cardData.length > 0){
     const insertContentDate = document.querySelector('.insert-modal-content')
     const image = cardData[0].image
@@ -79,13 +76,20 @@ function addModalContent(cardData) {
 async function getModalContent() {
   return data = await fetch(API)
     .then(response => response.json())
-    .then(data => data);
+    .then(data => {
+      return data
+    });
 }
 
 async function handlePortFolioCard(e){
+  // Add loader
+  loader.innerHTML = `<div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`
   const itemNumber = Number(this.className.slice(-1))
   let data = await getModalContent()
 
+  // debugger
+  console.log(loader.innerHTML)
+  loader.innerHTML = ''
   if (data.data){
     data = data.data
   }
