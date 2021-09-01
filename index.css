@@ -576,15 +576,16 @@ small {
     /* Modal */
     .modal-window > div{
         width: 95%;
+        height: 100vh;
     }
 
     .insert-modal-content{
         font-size: 1.2rem;
-        overflow-y: scroll;
+        /*overflow-y: scroll;*/
     }
 
     .modal-image img{
-        width: 100%;
+        width: 98%;
     }
 
     .modal-title{
@@ -593,6 +594,12 @@ small {
 
     .modal-subtitle{
         font-size: 1.4rem;
+    }
+    .scrollable{
+        overflow-y: scroll;
+        height: 100%;
+        scrollbar-width: none;
+        width: 100%;
     }
     /* End Modal */
 }
