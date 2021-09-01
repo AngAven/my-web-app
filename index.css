@@ -296,8 +296,9 @@ a{
 }
 
 .modal-window > div {
-    width: 60vw;
-    max-height: 80vh;
+    width: 85%;
+    height: 80vh;
+    border-radius: 1rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -335,10 +336,6 @@ a{
     display: none;
 }
 
-.modal-window > div {
-    border-radius: 1rem;
-}
-
 .modal-window div:not(:last-of-type) {
     margin-bottom: 15px;
 }
@@ -372,9 +369,15 @@ small {
 }
 
 .modal-image img{
-    width: 65rem;
+    width: 98%;
     box-shadow: var(--shadow);
-    /*border: solid royalblue 2px;*/
+}
+
+.scrollable{
+    overflow-y: scroll;
+    height: 100%;
+    scrollbar-width: none;
+    width: 100%;
 }
 
 .modal-link small{
@@ -574,18 +577,9 @@ small {
     /* End Portfolio */
 
     /* Modal */
-    .modal-window > div{
-        width: 95%;
-        height: 100vh;
-    }
-
     .insert-modal-content{
         font-size: 1.2rem;
         /*overflow-y: scroll;*/
-    }
-
-    .modal-image img{
-        width: 98%;
     }
 
     .modal-title{
@@ -595,12 +589,13 @@ small {
     .modal-subtitle{
         font-size: 1.4rem;
     }
-    .scrollable{
-        overflow-y: scroll;
-        height: 100%;
-        scrollbar-width: none;
-        width: 100%;
-    }
+
+    /*.scrollable{*/
+    /*    overflow-y: scroll;*/
+    /*    height: 100%;*/
+    /*    scrollbar-width: none;*/
+    /*    width: 100%;*/
+    /*}*/
     /* End Modal */
 }
 
