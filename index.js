@@ -89,7 +89,6 @@ async function handlePortFolioCard(e){
   let data = await getModalContent()
 
   // debugger
-  console.log(loader.innerHTML)
   loader.innerHTML = ''
   if (data.data){
     data = data.data

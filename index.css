@@ -262,13 +262,13 @@ a{
 }
 
 .item-5{
-    background: url("./assets/images/portfolio/government_digitalization_3.jpg");
+    background: url("./assets/images/portfolio/data_visualization.jpg");
     background-size: cover;
     grid-row: 5 / 10;
 }
 
 .item-6{
-    background: url("./assets/images/portfolio/data_visualization.jpg");
+    background: url("./assets/images/portfolio/government_digitalization_3.jpg");
     background-size: cover;
     grid-row: 7 / 10;
 }
